@@ -3,11 +3,8 @@ class Solution {
         int i = 0;
         int max = -1;
         for(int j = 1; j < nums.length; j++){
-            if(j > i && nums[j] > nums[i]){
-                int tempMax = nums[j] - nums[i];
-                if(tempMax > max){
-                    max = tempMax;
-                }
+            if(nums[j] > nums[i]){
+               max = Math.max(max,nums[j]-nums[i]);
             }
             else {
                 i = j;
