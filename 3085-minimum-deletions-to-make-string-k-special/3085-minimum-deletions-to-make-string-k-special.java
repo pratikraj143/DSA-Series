@@ -1,22 +1,26 @@
 class Solution {
-
     public int minimumDeletions(String word, int k) {
-        Map<Character, Integer> cnt = new HashMap<>();
-        for (char ch : word.toCharArray()) {
-            cnt.put(ch, cnt.getOrDefault(ch, 0) + 1);
+        int [] freq = new int[26];
+        for(int i =0;i<word.length();i++){
+            freq[word.charAt(i)-'a']++;
         }
-        int res = word.length();
-        for (int a : cnt.values()) {
-            int deleted = 0;
-            for (int b : cnt.values()) {
-                if (a > b) {
-                    deleted += b;
-                } else if (b > a + k) {
-                    deleted += b - (a + k);
+        int deletion = Integer.MAX_VALUE;
+        for(int i =0;i<26;i++){
+            if(freq[i]==0) continue;
+            int delete = 0;
+            int curr = freq[i];
+            for(int j =0;j<26;j++){
+                if(freq[j]==0)continue;
+                if(i==j) continue;
+                if(freq[j]<curr){
+                    delete+=freq[j];
+                }
+                else if(Math.abs(freq[j]-curr)>k){
+                    delete+=Math.abs(freq[j]-curr)-k;
                 }
             }
-            res = Math.min(res, deleted);
+            deletion = Math.min(deletion,delete);
         }
-        return res;
+        return deletion;
     }
 }
