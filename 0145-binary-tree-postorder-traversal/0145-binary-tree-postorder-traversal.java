@@ -15,43 +15,32 @@
  */
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> postorder =new ArrayList<Integer>();
-        if (root == null) {
-            return postorder;
-        }
+        List<Integer> post = new ArrayList<>();
+        if (root == null) return post;
 
-        // Two stacks for iterative traversal
-        Stack<TreeNode> st1 = new Stack<>();
-        Stack<TreeNode> st2 = new Stack<>();
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode curr = root;
+        TreeNode temp;
 
-        // Push the root node onto the first stack
-        st1.push(root);
-
-        // Iterative traversal to populate st2 with nodes in postorder
-        while (!st1.empty()) {
-            // Get the top node from st1
-            root = st1.pop();
-
-            // Push the node onto st2
-            st2.push(root);
-
-            // Push left child onto st1 if exists
-            if (root.left != null) {
-                st1.push(root.left);
-            }
-
-            // Push right child onto st1 if exists
-            if (root.right != null) {
-                st1.push(root.right);
+        while (curr != null || !st.isEmpty()) {
+            if (curr != null) {
+                st.push(curr);
+                curr = curr.left;
+            } else {
+                temp = st.peek().right;
+                if (temp == null) {
+                    temp = st.pop();
+                    post.add(temp.val);
+                    while (!st.isEmpty() && temp == st.peek().right) {
+                        temp = st.pop();
+                        post.add(temp.val);
+                    }
+                } else {
+                    curr = temp;
+                }
             }
         }
 
-        // Populate the postorder traversal list by popping st2
-        while (!st2.empty()) {
-            postorder.add(st2.pop().val);
-        }
-
-        // Return the postorder traversal
-        return postorder;
+        return post;
     }
 }
