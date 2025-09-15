@@ -1,21 +1,19 @@
 class Solution {
     public int canBeTypedWords(String text, String brokenLetters) {
-        HashSet<Character> hm = new HashSet<>();
-        int count=0;
-        for(int i=0;i<text.length();i++){
-            char ch=text.charAt(i);
-            hm.add(ch);
-            if((ch == ' ')|| i==text.length()-1){
-                for(int j=0;j<brokenLetters.length();j++){
-                    if(hm.contains(brokenLetters.charAt(j))){
-                        count--;
-                        break;
-                    };
-                }
+        int count = 1;
+        boolean flag = true;
+        boolean[] c = new boolean[26];
+        for(int i = 0; i < brokenLetters.length(); i++) c[brokenLetters.charAt(i) - 97] = true;
+        for(char ch : text.toCharArray()) {
+            if(ch == ' ') {
+                flag = true;
                 count++;
-                hm.clear();
+            }
+            else if(c[ch - 97] && flag) {
+                count--;
+                flag = false;
             }
         }
-        return count;
+        return count < 1 ? 0 : count;
     }
 }
