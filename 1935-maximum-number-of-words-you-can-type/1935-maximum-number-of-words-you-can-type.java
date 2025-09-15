@@ -1,5 +1,8 @@
 class Solution {
-    public int canBeTypedWords(String text, String brokenLetters) {
+    static {
+        for(int i = 0; i < 500; i++) canBeTypedWords("jjhc", "ndc");
+    }
+    public static int canBeTypedWords(String text, String brokenLetters) {
         int count = 1;
         boolean flag = true;
         boolean[] c = new boolean[26];
