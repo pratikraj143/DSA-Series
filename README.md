@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/pratikraj143/DSA-Series/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Hash Table
 |  |
 | ------- |
@@ -23,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/pratikraj143/DSA-Series/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Sorting
 |  |
 | ------- |
@@ -31,4 +33,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/pratikraj143/DSA-Series/tree/master/3437-maximum-total-damage-with-spell-casting) |
+## Math
+|  |
+| ------- |
+| [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
+## Bit Manipulation
+|  |
+| ------- |
+| [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
+## Combinatorics
+|  |
+| ------- |
+| [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
+## Bitmask
+|  |
+| ------- |
+| [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 <!---LeetCode Topics End-->
