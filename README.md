@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [3233-maximize-the-number-of-partitions-after-operations](https://github.com/pratikraj143/DSA-Series/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/pratikraj143/DSA-Series/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Sorting
@@ -48,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [3233-maximize-the-number-of-partitions-after-operations](https://github.com/pratikraj143/DSA-Series/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Combinatorics
 |  |
@@ -56,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bitmask
 |  |
 | ------- |
+| [3233-maximize-the-number-of-partitions-after-operations](https://github.com/pratikraj143/DSA-Series/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Linked List
 |  |
@@ -65,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/pratikraj143/DSA-Series/tree/master/1353-find-resultant-array-after-removing-anagrams) |
+| [3233-maximize-the-number-of-partitions-after-operations](https://github.com/pratikraj143/DSA-Series/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 ## Greedy
 |  |
 | ------- |
