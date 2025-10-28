@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/pratikraj143/DSA-Series/tree/master/0045-jump-game-ii) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/pratikraj143/DSA-Series/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/pratikraj143/DSA-Series/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/pratikraj143/DSA-Series/tree/master/3437-maximum-total-damage-with-spell-casting) |
@@ -35,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/pratikraj143/DSA-Series/tree/master/0045-jump-game-ii) |
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/pratikraj143/DSA-Series/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/pratikraj143/DSA-Series/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
@@ -88,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Greedy
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/pratikraj143/DSA-Series/tree/master/0045-jump-game-ii) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/pratikraj143/DSA-Series/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 ## Depth-First Search
 |  |
