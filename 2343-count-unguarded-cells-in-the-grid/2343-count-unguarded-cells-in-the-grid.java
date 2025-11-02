@@ -1,109 +1,89 @@
 class Solution {
-
-    private static final int UNGUARDED = 0;
-    private static final int GUARDED = 1;
-    private static final int GUARD = 2;
-    private static final int WALL = 3;
-
     public int countUnguarded(int m, int n, int[][] guards, int[][] walls) {
-        // Create and initialize grid
-        int[][] grid = new int[m][n];
-
-        // Mark guards' positions
-        for (int[] guard : guards) {
-            grid[guard[0]][guard[1]] = GUARD;
+          int visit[][]=new int[m][n];
+          int count=0;
+          int gr=guards.length;
+          int wr=walls.length;
+          for(int[] wall:walls)
+          {
+            visit[wall[0]][wall[1]]=2;
+          }
+          for(int gu[]:guards)
+        {
+            visit[gu[0]][gu[1]]=2;
         }
-
-        // Mark walls' positions
-        for (int[] wall : walls) {
-            grid[wall[0]][wall[1]] = WALL;
-        }
-
-        // Horizontal passes
-        for (int row = 0; row < m; row++) {
-            // Left to right pass
-            boolean isGuardLineActive = grid[row][0] == GUARD;
-            for (int col = 1; col < n; col++) {
-                isGuardLineActive = updateCellVisibility(
-                    grid,
-                    row,
-                    col,
-                    isGuardLineActive
-                );
-            }
-
-            // Right to left pass
-            isGuardLineActive = grid[row][n - 1] == GUARD;
-            for (int col = n - 2; col >= 0; col--) {
-                isGuardLineActive = updateCellVisibility(
-                    grid,
-                    row,
-                    col,
-                    isGuardLineActive
-                );
-            }
-        }
-
-        // Vertical passes
-        for (int col = 0; col < n; col++) {
-            // Top to bottom pass
-            boolean isGuardLineActive = grid[0][col] == GUARD;
-            for (int row = 1; row < m; row++) {
-                isGuardLineActive = updateCellVisibility(
-                    grid,
-                    row,
-                    col,
-                    isGuardLineActive
-                );
-            }
-
-            // Bottom to top pass
-            isGuardLineActive = grid[m - 1][col] == GUARD;
-            for (int row = m - 2; row >= 0; row--) {
-                isGuardLineActive = updateCellVisibility(
-                    grid,
-                    row,
-                    col,
-                    isGuardLineActive
-                );
-            }
-        }
-
-        // Count unguarded cells
-        int count = 0;
-        for (int row = 0; row < m; row++) {
-            for (int col = 0; col < n; col++) {
-                if (grid[row][col] == UNGUARDED) {
+          int[][] dxdy={{-1,0},{1,0},{0,-1},{0,1}};
+          for(int row=0;row<gr;row++){
+                int dx=guards[row][0];
+                int dy=guards[row][1];
+                for(int i=dx+1;i<m;i++)
+                {
+                    int newdx=i;
+                    int newdy=dy;
+                    if(visit[newdx][newdy]==2)
+                    {
+                        break;
+                    } 
+                    if(visit[newdx][newdy]==1)
+                    {
+                        continue;
+                    }
+                    visit[newdx][newdy]=1;
                     count++;
                 }
-            }
-        }
+                for(int i=dy+1;i<n;i++)
+                {
+                    int newdx=dx;
+                    int newdy=i;
+                    if(visit[newdx][newdy]==2)
+                    {
+                        break;
+                    }
+                    if(visit[newdx][newdy]==1){
+                        continue;
+                    }
+                    visit[newdx][newdy]=1;
+                    count++;
 
-        return count;
+                }
+                for(int i=dy-1;i>=0;i--)
+                {
+                    int newdx=dx;
+                    int newdy=i;
+                    if(visit[newdx][newdy]==2)
+                    {
+                        break;
+                    }
+                        
+                    if(visit[newdx][newdy]==1){
+                        continue;
+                    }
+                    visit[newdx][newdy]=1;
+                    count++;
+
+                }
+                for(int i=dx-1;i>=0;i--)
+                {
+                    int newdx=i;
+                    int newdy=dy;
+                    if(visit[newdx][newdy]==2)
+                    {
+                        break;
+                    }
+                        
+                    if(visit[newdx][newdy]==1){
+                        continue;
+                    }
+                    visit[newdx][newdy]=1;
+                    count++;
+                }
+            
+          }
+          
+          int sum=(m*n)-(gr+wr+count);
+          return sum;
+
     }
+   
 
-    // Helper method to update cell visibility
-    private boolean updateCellVisibility(
-        int[][] grid,
-        int row,
-        int col,
-        boolean isGuardLineActive
-    ) {
-        // If current cell is a guard, reactivate the guard line
-        if (grid[row][col] == GUARD) {
-            return true;
-        }
-
-        // If current cell is a wall, deactivate the guard line
-        if (grid[row][col] == WALL) {
-            return false;
-        }
-
-        // If guard line is active, mark cell as guarded
-        if (isGuardLineActive) {
-            grid[row][col] = GUARDED;
-        }
-
-        return isGuardLineActive;
-    }
 }
