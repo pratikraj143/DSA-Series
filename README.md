@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/pratikraj143/DSA-Series/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 | [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/pratikraj143/DSA-Series/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/pratikraj143/DSA-Series/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
 ## Hash Table
 |  |
 | ------- |
@@ -34,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/pratikraj143/DSA-Series/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/pratikraj143/DSA-Series/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/pratikraj143/DSA-Series/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
 ## Two Pointers
 |  |
 | ------- |
@@ -119,10 +121,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/pratikraj143/DSA-Series/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/pratikraj143/DSA-Series/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
 ## Enumeration
 |  |
 | ------- |
@@ -173,8 +177,21 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/pratikraj143/DSA-Series/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/pratikraj143/DSA-Series/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
 ## Queue
 |  |
 | ------- |
 | [2618-maximize-the-minimum-powered-city](https://github.com/pratikraj143/DSA-Series/tree/master/2618-maximize-the-minimum-powered-city) |
+## Union Find
+|  |
+| ------- |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
+## Graph
+|  |
+| ------- |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
+## Ordered Set
+|  |
+| ------- |
+| [3863-power-grid-maintenance](https://github.com/pratikraj143/DSA-Series/tree/master/3863-power-grid-maintenance) |
 <!---LeetCode Topics End-->
